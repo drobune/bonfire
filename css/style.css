@@ -121,6 +121,36 @@ hr {
 }
 
 /* home section */
+@media screen and (max-width: 1024px) {
+#home {
+  background: transparent;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+
+}
+body:after {
+    content:"";
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+    display:block;
+    background:url('../images/home-bg.jpg') no-repeat 50% 50%;
+    background-size:cover;
+}
+}
+@media screen and (min-width: 1024px) {
 #home {
   background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
@@ -138,6 +168,8 @@ hr {
   height: 100vh;
   text-align: center;
 }
+}
+
 #home h1 {
   font-size: 20px;
   letter-spacing: 8px;
@@ -162,7 +194,8 @@ hr {
 
 /* team section */
 #team {
-  text-align: center;
+    text-align: center;
+    background-color: white;
 }
 #team h3 {
   font-size: 18px;
@@ -195,6 +228,7 @@ hr {
 #gallery {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: white;
 }
 #gallery .col-md-4 {
   padding-top: 52px;
@@ -250,6 +284,20 @@ hr {
 }
 
 /* footer section */
+@media screen and (max-width: 1024px) {
+footer {
+  background: url('../images/footer-bg.jpg') 50% -100px repeat-y;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100%;
+  min-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 180px;
+  margin-bottom: -102px;
+}
+}
+@media  (min-width: 1024px) {
+
 footer {
   background: url('../images/footer-bg.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
@@ -258,6 +306,7 @@ footer {
   color: #ffffff;
   padding-top: 80px;
   padding-bottom: 80px;
+}
 }
 footer h2 {
   padding-bottom: 14px;
