@@ -213,6 +213,18 @@ body:after {
  padding-top: 42px;
 }
 
+/* reserve section */
+.reserve {
+    margin-bottom: 100px;
+}
+
+.own-reservation-form {
+    text-align: center;
+}
+#f2b-widget {
+    display: inline-block;
+}
+
 /* menu section */
 #menu h4 {
 	line-height: 1.5;
