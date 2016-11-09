@@ -1,10 +1,4 @@
-
-// preloader
-$(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
-});
-
-/* HTML document is loaded. DOM is ready. 
+/* HTML document is loaded. DOM is ready.
 -------------------------------------------*/
 $(function(){
 
@@ -37,4 +31,3 @@ $(function(){
     });
 
 });
-
