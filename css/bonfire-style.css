@@ -255,11 +255,11 @@ hr {
 @media screen and (max-width: 1024px) {
     footer {
         background: url('../images/footer-bg.jpg') 50% -100px repeat-y;
-        background-size: cover;
+        background-size: auto;
         color: #ffffff;
         min-height: 100%;
         min-width: 100%;
-        padding-top: 80px;
+        padding-top: 180px;
         padding-bottom: 180px;
         margin-bottom: -102px;
     }
@@ -267,13 +267,13 @@ hr {
 @media  (min-width: 1024px) {
 
     footer {
-        background: url('../images/footer-bg.jpg') 50% 0 repeat-y fixed;
-        -webkit-background-size: cover;
-        background-size: cover;
+        background: url('../images/footer-bg.jpg') 50% 0 repeat-x fixed;
+        -webkit-background-size: auto;
+        background-size: auto;
         background-position: center;
         color: #ffffff;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 380px;
+        padding-bottom: 180px;
     }
 }
 footer h2 {
@@ -296,6 +296,10 @@ footer .ph, footer .address {
 footer .fa {
     font-size: 12px;
     padding-right: 10px;
+}
+
+footer .container {
+    background-color: rgba(0,0,0,0.7);
 }
 
 /* social icon */
@@ -345,4 +349,40 @@ footer .fa {
 }
 #copyright a:hover {
     color: #FF0;
+}
+
+#snow{
+    background: none;
+    font-family: Androgyne;
+    background-image: url('../images/s1.png'), url('../images/s2.png'), url('../images/s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index:0;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
