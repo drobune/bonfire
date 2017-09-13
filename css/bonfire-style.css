@@ -394,3 +394,7 @@ footer .container {
 footer .container img {
     max-width: 100%;
 }
+
+.navbar .navbar-collapse ul li .smoothScroll {
+    z-index: 1;
+}
