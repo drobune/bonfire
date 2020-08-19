@@ -120,6 +120,19 @@ hr {
         align-items: center;
         height: 100vh;
         text-align: center;
+        position: relative;
+    }
+
+    #home:before {
+        content: '';
+        position: absolute;
+        background: inherit;
+        z-index: 0;
+        filter: brightness(0.5);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 }
 
